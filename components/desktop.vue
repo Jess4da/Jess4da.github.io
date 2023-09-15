@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import data from "~/assets/json/data.json";
+
 const div_home = ref(null);
 const div_about = ref(null);
 const div_portfolio = ref(null);
@@ -9,6 +11,10 @@ const visibility = {
   portfolio: useElementVisibility(div_portfolio),
   contact: useElementVisibility(div_contact),
 };
+
+const sortedSkills = computed(() => {
+  return data.about.skills.sort((a, b) => (a.label.toLowerCase() > b.label.toLowerCase() ? 1 : -1));
+});
 
 const router = useRouter();
 
@@ -70,15 +76,46 @@ const hash_inView = computed(() => {
             <p class="text-6xl text-white">I'm</p>
             <p class="text-8xl text-[#FFEF63] p-5">Jessada</p>
           </div>
-          <div class="flex items-center text-center bg-white rounded-full px-6 py-3 ">
-            <p class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+          <div class="flex items-center text-center bg-white rounded-full px-6 py-3">
+            <p
+              class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"
+            >
               SOFTWARE ENGINEER
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div ref="div_about" id="about" class="snap-always snap-start h-[100vh] w-full my-1 bg-white bg-opacity-[0.01]">About</div>
+    <div
+      ref="div_about"
+      id="about"
+      class="snap-always snap-start h-[100vh] w-full my-1 bg-white bg-opacity-[0.01]"
+    >
+      <div class="flex justify-center">
+        <div class="flex flex-col justify-center w-[70%] mt-[5vh]">
+          <p class="text-white text-9xl mb-5 font-semibold">About</p>
+          <div class="flex">
+            <div class="bg-[#FFEF63] mt-5 rounded-full w-20 h-1 me-2"></div>
+            <p class="text-white text-3xl font-light">
+              {{ data.about.title }}
+              <a class="text-[#FFEF63] font-semibold">love writing code.</a>
+            </p>
+          </div>
+          <p class="text-white text-5xl mt-10 font-semibold text-center">Skills</p>
+          <div class="grid grid-cols-6 gap-5 mt-5">
+            <div
+              v-for="item in sortedSkills"
+              class="flex justify-center bg-slate-500 hover:bg-[#FFEF63] rounded-2xl transition hover:scale-110"
+            >
+              <div class="p-10 flex flex-col justify-center items-center">
+                <img class="w-2/3 h-2/3" :src="item.img" />
+                <p class="text-white font-semibold text-4xl">{{ item.label }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div ref="div_portfolio" id="portfolio" class="snap-always snap-start h-[200vh] w-full my-1">
       Portfolio
     </div>
@@ -87,4 +124,3 @@ const hash_inView = computed(() => {
     </div>
   </div>
 </template>
-
