@@ -12,27 +12,7 @@
 <link rel="prefetch" as="style" href="/assets/error-500.cbe832a1.css">
 <link rel="prefetch" as="script" crossorigin href="/assets/error-500.2f6a2d48.js">
 <script type="module" src="/assets/entry.cd1024c0.js" crossorigin></script>
-<script id="unhead:payload" type="application/json">{"title":"Jessada's Page"}</script>
-<script>
-async function register () {
-  const registration = await navigator.serviceWorker.register('/sw.js')
-  await navigator.serviceWorker.ready
-  registration.active.addEventListener('statechange', (event) => {
-    if (event.target.state === 'activated') {
-      window.location.reload()
-    }
-  })
-}
-if ('serviceWorker' in navigator) {
-  if (location.hostname !== 'localhost' && location.protocol === 'http:') {
-    location.replace(location.href.replace('http://', 'https://'))
-  } else {
-    register()
-  }
-}
-</script>
-
-</head>
+<script id="unhead:payload" type="application/json">{"title":"Jessada's Page"}</script></head>
 <body ><div id="__nuxt"></div><script type="application/json" id="__NUXT_DATA__" data-ssr="false">[{"_errors":1,"serverRendered":2,"data":3,"state":4},{},false,{},{}]</script>
 <script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildAssetsDir:"assets",cdnURL:""}}</script></body>
 </html>
