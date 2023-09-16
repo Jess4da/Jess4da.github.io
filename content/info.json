@@ -3,20 +3,24 @@
     "title": "I'm Jessada Duangpanyasawang, nickname is Jae. Expert in Python, especially Python web framework, keep learning new things, and importantly, ",
     "skills": [
       {
-        "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1518503935975/S1_-_WePM.png",
-        "label": "Flask"
-      },
-      {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
         "label": "Python"
       },
       {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg",
-        "label": "Ubuntu"
-      },
-      {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
         "label": "JavaScript"
+      },
+      {
+        "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1518503935975/S1_-_WePM.png",
+        "label": "Flask"
+      },
+      {
+        "img": "https://cdn.worldvectorlogo.com/logos/fastapi.svg",
+        "label": "FastAPI"
+      },
+      {
+        "img": "https://cdn.worldvectorlogo.com/logos/django.svg",
+        "label": "Django"
       },
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/555px-Vue.js_Logo_2.svg.png",
@@ -31,8 +35,24 @@
         "label": "Tailwindcss"
       },
       {
-        "img":"https://cdn.worldvectorlogo.com/logos/fastapi.svg",
-        "label": "FastAPI"
+        "img": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
+        "label": "Go"
+      },
+      {
+        "img": "https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png",
+        "label": "Java"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png",
+        "label": "C/C++"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/17/C_Sharp_Icon.png",
+        "label": "C#"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg",
+        "label": "Ubuntu"
       }
     ]
   }

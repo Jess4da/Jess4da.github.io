@@ -5,6 +5,6 @@
 </template>
 <style>
 html {
-  @apply bg-gradient-to-br from-[#151E27] to-slate-800 scroll-smooth snap-y snap-mandatory overflow-x-hidden;
+  @apply bg-gradient-to-br from-[#151E27] to-slate-800 scroll-smooth snap-y snap-proximity overflow-x-hidden;
 }
 </style>
