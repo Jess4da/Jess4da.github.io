@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import data from "~/assets/json/data.json";
+const router = useRouter();
 
 const div_home = ref(null);
 const div_about = ref(null);
@@ -11,13 +11,6 @@ const visibility = {
   portfolio: useElementVisibility(div_portfolio),
   contact: useElementVisibility(div_contact),
 };
-
-const sortedSkills = computed(() => {
-  return data.about.skills.sort((a, b) => (a.label.toLowerCase() > b.label.toLowerCase() ? 1 : -1));
-});
-
-const router = useRouter();
-
 const hash_inView = computed(() => {
   for (const k in visibility) {
     if (visibility[k as keyof typeof visibility].value) {
@@ -26,14 +19,16 @@ const hash_inView = computed(() => {
     }
   }
 });
+
+const { data: info } = await useAsyncData("info", () => queryContent("/info").findOne());
 </script>
 <template>
   <div class="sticky inset-0 h-0">
     <div class="flex justify-end font-semibold">
       <div
-        class="bg-gradient-to-r from-[#5a547e] to-[#54767e] w-fit h-20 rounded-es-3xl drop-shadow-lg flex justify-center items-center"
+        class="bg-gradient-to-r from-[#5a547e] to-[#54767e] w-full lg:w-fit h-20 lg:rounded-es-3xl drop-shadow-lg flex justify-center items-center"
       >
-        <div class="flex justify-around text-white text-3xl px-10">
+        <div class="flex justify-around text-white text-lg xl:text-3xl px-10">
           <a
             class="mx-2 transition hover:scale-110"
             :class="hash_inView == 'home' ? 'text-[#FFEF63]' : ''"
@@ -63,22 +58,26 @@ const hash_inView = computed(() => {
     </div>
   </div>
   <div class="h-[510vh] w-full">
-    <div ref="div_home" id="home" class="flex select-none snap-always snap-start h-[100vh] w-full">
-      <div class="flex justify-center h-full w-[60%]">
-        <div class="flex flex-col items-center justify-end">
-          <div class="bg-[#FFEF63] w-[80%] h-[70%] rounded-[25%]"></div>
-          <img class="-mt-[90%] w-[850px] h-[850px]" src="~/assets/img/profile.png" />
+    <div
+      ref="div_home"
+      id="home"
+      class="snap-always snap-start h-[100vh] w-full my-1 flex max-lg:flex-col-reverse"
+    >
+      <div class="flex items-end justify-center h-1/2 lg:h-full lg:w-[60%]">
+        <div class="flex flex-col justify-end items-center h-full w-full">
+          <div class="block lg:bg-[#FFEF63] p-[20%] lg:p-[30%] rounded-[25%]"></div>
+          <img class="block -mt-[50%] lg:-mt-[70%] h-[90%]" src="~/assets/img/profile.png" />
         </div>
       </div>
-      <div class="flex justify-center h-full w-[30%] font-semibold">
+      <div class="flex justify-center font-semibold h-1/2 lg:h-full lg:w-[40%]">
         <div class="flex flex-col justify-center items-center text-center">
-          <div class="flex items-center text-center">
-            <p class="text-6xl text-white">I'm</p>
-            <p class="text-8xl text-[#FFEF63] p-5">Jessada</p>
+          <div class="flex items-center text-center mt-20">
+            <p class="text-2xl xl:text-6xl text-white">I'm</p>
+            <p class="text-4xl xl:text-8xl text-[#FFEF63] p-5">Jessada</p>
           </div>
           <div class="flex items-center text-center bg-white rounded-full px-6 py-3">
             <p
-              class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"
+              class="text-xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"
             >
               SOFTWARE ENGINEER
             </p>
@@ -89,27 +88,27 @@ const hash_inView = computed(() => {
     <div
       ref="div_about"
       id="about"
-      class="snap-always snap-start h-[100vh] w-full my-1 bg-white bg-opacity-[0.01]"
+      class="flex justify-center items-start snap-always snap-start h-[100vh] max-h-[100vh] overflow-y-auto w-full my-1 bg-white bg-opacity-[0.01]"
     >
-      <div class="flex justify-center">
-        <div class="flex flex-col justify-center w-[70%] mt-[5vh]">
-          <p class="text-white text-9xl mb-5 font-semibold">About</p>
+      <div class="flex justify-center mt-[15vh] lg:mt-[10vh]">
+        <div class="flex flex-col justify-center w-[70%]">
+          <p class="text-white text-5xl lg:text-9xl mb-5 font-semibold">About</p>
           <div class="flex">
             <div class="bg-[#FFEF63] mt-5 rounded-full w-20 h-1 me-2"></div>
-            <p class="text-white text-3xl font-light">
-              {{ data.about.title }}
+            <p class="text-white text-lg lg:text-3xl font-light">
+              {{ info?.about.title }}
               <a class="text-[#FFEF63] font-semibold">love writing code.</a>
             </p>
           </div>
           <p class="text-white text-5xl mt-10 font-semibold text-center">Skills</p>
-          <div class="grid grid-cols-6 gap-5 mt-5">
+          <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 lg:gap-5 mt-5">
             <div
-              v-for="item in sortedSkills"
-              class="flex justify-center bg-slate-500 hover:bg-[#FFEF63] rounded-2xl transition hover:scale-110"
+              v-for="item in info?.about.skills"
+              class="block bg-slate-500 hover:bg-[#FFEF63] rounded-2xl transition hover:scale-110"
             >
-              <div class="p-10 flex flex-col justify-center items-center">
+              <div class="p-10 flex flex-col justify-center items-center h-full">
                 <img class="w-2/3 h-2/3" :src="item.img" />
-                <p class="text-white font-semibold text-4xl">{{ item.label }}</p>
+                <p class="text-white font-semibold text-2xl">{{ item.label }}</p>
               </div>
             </div>
           </div>
@@ -119,7 +118,11 @@ const hash_inView = computed(() => {
     <div ref="div_portfolio" id="portfolio" class="snap-always snap-start h-[200vh] w-full my-1">
       Portfolio
     </div>
-    <div ref="div_contact" id="contact" class="snap-always snap-start h-[100vh] w-full my-1">
+    <div
+      ref="div_contact"
+      id="contact"
+      class="snap-always snap-start h-[100vh] w-full my-1 bg-white bg-opacity-[0.01]"
+    >
       Contact
     </div>
   </div>

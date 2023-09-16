@@ -1,0 +1,39 @@
+{
+  "about": {
+    "title": "I'm Jessada Duangpanyasawang, nickname is Jae. Expert in Python, especially Python web framework, keep learning new things, and importantly, ",
+    "skills": [
+      {
+        "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1518503935975/S1_-_WePM.png",
+        "label": "Flask"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+        "label": "Python"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg",
+        "label": "Ubuntu"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        "label": "JavaScript"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/555px-Vue.js_Logo_2.svg.png",
+        "label": "Vue.js"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png",
+        "label": "Nuxt"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png",
+        "label": "Tailwindcss"
+      },
+      {
+        "img":"https://cdn.worldvectorlogo.com/logos/fastapi.svg",
+        "label": "FastAPI"
+      }
+    ]
+  }
+}
