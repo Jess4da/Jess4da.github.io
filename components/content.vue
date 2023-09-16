@@ -337,6 +337,9 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
           <p class="ms-5 text-white font-semibold text-lg">linkedin.com/in/jessada-d</p>
         </a>
       </div>
+      <div class="flex justify-center items-center w-[80%] lg:w-[70%] mb-5">
+        <div class="w-full self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
+      </div>
     </div>
   </div>
   <div class="inset-0 bottom-0 text-center m-5 text-white">Copyright ©2023 Jess4da</div>
