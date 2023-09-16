@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@vueuse/nuxt", "@nuxt/content"],
+  modules: ["@vueuse/nuxt"],
   app: {
     head: {
       title: "Jessada's Page",
