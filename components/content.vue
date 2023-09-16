@@ -192,7 +192,7 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
     >
       <div class="flex justify-center items-center w-[80%] lg:w-[70%] mb-5">
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
-        <p class="text-white mx-5 text-4xl lg:text-6xl">Contact</p>
+        <p class="text-white mx-5 text-4xl lg:text-6xl font-semibold">Contact</p>
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5">
