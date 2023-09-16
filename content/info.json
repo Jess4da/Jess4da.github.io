@@ -11,6 +11,10 @@
         "label": "JavaScript"
       },
       {
+        "img": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        "label": "Git"
+      },
+      {
         "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1518503935975/S1_-_WePM.png",
         "label": "Flask"
       },
@@ -21,6 +25,10 @@
       {
         "img": "https://cdn.worldvectorlogo.com/logos/django.svg",
         "label": "Django"
+      },
+      {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg",
+        "label": "HTML/CSS"
       },
       {
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/555px-Vue.js_Logo_2.svg.png",
@@ -39,7 +47,7 @@
         "label": "Go"
       },
       {
-        "img": "https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png",
+        "img": "https://cdn-icons-png.flaticon.com/256/226/226777.png",
         "label": "Java"
       },
       {
@@ -54,6 +62,34 @@
         "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg",
         "label": "Ubuntu"
       }
+    ]
+  },
+  "portfolio": {
+    "experience": [
+      {
+        "year": "January 2023 - June 2023",
+        "title": "Full-Stack Developer",
+        "subtitle": "Kamphaeng Phet Optical Shop - Freelance Project",
+        "detail": [
+          "Created a stock management and sale statistic desktop application for the shop by using Vue.js as a front end and Flask as a back end and serve the application with pywebview (Rewrite from exist FoxPro program)",
+          "Created a customer history collection desktop application for collecting customer buy history by using Vue.js as a frontend and Flask as a back end and serve the application with pywebview"
+        ],
+        "stack": "Vue.js(TypeScript), Tailwindcss, Vueuse, Pinia, Flask, sqlalchemy, pdfkit, pydantic"
+      },
+      {
+        "year": "April 2021 - June 2021",
+        "title": "Back End Developer",
+        "subtitle": "LINE MAN Wongnai - Internship",
+        "detail": [
+          "Added an audio player to admin page for listening to the recorded audio that was saved in S3 bucket",
+          "Created Prometheus endpoint metrics for viewing the performance of requests and display in Grafana",
+          "Made the Career-Admin page can get Medium article detail from pasted URL and show to Career Page"
+        ],
+        "stack": "Django, Odoo, boto3, Beautiful-Soup, prometheus-client"
+      }
+    ],
+    "project": [
+      
     ]
   }
 }
