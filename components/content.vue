@@ -63,7 +63,7 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
     <div
       ref="div_home"
       id="home"
-      class="snap-always snap-start h-[100vh] w-full my-1 flex max-lg:flex-col-reverse"
+      class="snap-always snap-start h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse"
     >
       <div class="flex items-end justify-center h-1/2 lg:h-full lg:w-[60%]">
         <div class="flex flex-col justify-end items-center h-full w-full">
@@ -198,7 +198,8 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5">
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
-        >
+          href="tel:+66839621222"
+          >
           <svg
             height="200px"
             width="200px"
@@ -226,6 +227,7 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
         </a>
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
+          href="mailto:jessada.d@icloud.com"
         >
           <svg
             viewBox="0 -3.5 32 32"
