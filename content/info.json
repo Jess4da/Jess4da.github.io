@@ -89,7 +89,16 @@
       }
     ],
     "project": [
-      
+      {
+        "year": "2020 - 2021",
+        "title": "Cactus Classification Application",
+        "subtitle": "Naresuan University - Senior Project",
+        "detail": [
+          "Created an application for classifying the cactus species by trained species (dataset of 20 species)",
+          "Compared which Deep-Learning model is the most accurate from the following model; Resnet, YOLOv5, and EfficientDet"
+        ],
+        "stack": "Flask, Expo(React.js), Python, Google Cloud Platform"
+      }
     ]
   }
 }
