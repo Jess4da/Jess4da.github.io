@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import info from "~/assets/json/info.json";
+
 const router = useRouter();
 
 const div_home = ref(null);
@@ -21,8 +23,6 @@ const hash_inView = computed(() => {
   }
   return visible;
 });
-
-const { data: info } = await useAsyncData("info", () => queryContent("/info").findOne());
 </script>
 <template>
   <nav class="sticky inset-0 h-0">
@@ -199,7 +199,7 @@ const { data: info } = await useAsyncData("info", () => queryContent("/info").fi
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
           href="tel:+66839621222"
-          >
+        >
           <svg
             height="200px"
             width="200px"
