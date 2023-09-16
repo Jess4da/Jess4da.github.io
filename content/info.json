@@ -43,22 +43,6 @@
         "label": "Tailwindcss"
       },
       {
-        "img": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
-        "label": "Go"
-      },
-      {
-        "img": "https://cdn-icons-png.flaticon.com/256/226/226777.png",
-        "label": "Java"
-      },
-      {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png",
-        "label": "C/C++"
-      },
-      {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/1/17/C_Sharp_Icon.png",
-        "label": "C#"
-      },
-      {
         "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg",
         "label": "Ubuntu"
       }
