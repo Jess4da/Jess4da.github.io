@@ -63,7 +63,7 @@ const hash_inView = computed(() => {
     <div
       ref="div_home"
       id="home"
-      class="snap-always snap-start h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse"
+      class="h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse"
     >
       <div class="flex items-end justify-center h-1/2 lg:h-full lg:w-[60%]">
         <div class="flex flex-col justify-end items-center h-full w-full">
@@ -90,7 +90,7 @@ const hash_inView = computed(() => {
     <div
       ref="div_about"
       id="about"
-      class="flex justify-center items-start snap-always snap-start min-h-[100vh] h-fit w-full my-1"
+      class="flex justify-center items-start min-h-[100vh] h-fit w-full my-1"
     >
       <div class="flex justify-center my-[15vh] lg:my-[5vh] xl:my-[10vh] w-full">
         <div class="flex flex-col justify-center w-[70%]">
@@ -123,7 +123,7 @@ const hash_inView = computed(() => {
     <div
       ref="div_portfolio"
       id="portfolio"
-      class="flex justify-center items-start snap-always snap-start min-h-[100vh] h-fit w-full my-1"
+      class="flex justify-center items-start min-h-[100vh] h-fit w-full my-1"
     >
       <div class="flex justify-center my-[15vh] lg:my-[5vh] xl:my-[10vh] w-full">
         <div class="flex flex-col w-[70%]">
@@ -188,7 +188,7 @@ const hash_inView = computed(() => {
     <div
       ref="div_contact"
       id="contact"
-      class="flex flex-col justify-start items-center snap-always snap-start h-fit w-full my-1 mb-10"
+      class="flex flex-col justify-start items-center h-fit w-full my-1 mb-10"
     >
       <div class="flex justify-center items-center w-[80%] lg:w-[70%] mb-5">
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
