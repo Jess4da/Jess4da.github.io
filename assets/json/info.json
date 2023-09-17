@@ -74,7 +74,7 @@
     ],
     "project": [
       {
-        "year": "2020 - 2021",
+        "year": "October 2020 - March 2021",
         "title": "Cactus Classification Application",
         "subtitle": "Naresuan University - Senior Project",
         "detail": [
@@ -82,6 +82,15 @@
           "Compared which Deep-Learning model is the most accurate from the following model; Resnet, YOLOv5, and EfficientDet"
         ],
         "stack": "Flask, Expo(React.js), Python, Google Cloud Platform"
+      },
+      {
+        "year": "May 2020 - December 2020",
+        "title": "LINE Covid Case Daily Notify",
+        "subtitle": "Free Time Project",
+        "detail": [
+          "Created a LINE official account that notify daily covid case in thailand, requested data from department of disease control thailand, using LINE webhook, developed with Flask and deployed on heroku"
+        ],
+        "stack": "Flask, LineBotApi, Heroku"
       }
     ]
   }
