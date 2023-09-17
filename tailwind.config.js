@@ -13,6 +13,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      zIndex: {
+        max: "2147483647",
+      },
     },
   },
   plugins: [],

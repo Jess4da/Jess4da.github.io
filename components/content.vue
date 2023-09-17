@@ -25,7 +25,7 @@ const hash_inView = computed(() => {
 });
 </script>
 <template>
-  <nav class="sticky inset-0 h-0">
+  <nav class="sticky inset-0 h-0 z-max">
     <div class="flex justify-end font-semibold">
       <div
         class="bg-gradient-to-r from-[#5a547e] to-[#54767e] w-full lg:w-fit h-20 lg:rounded-es-3xl drop-shadow-lg flex justify-center items-center"
@@ -60,22 +60,20 @@ const hash_inView = computed(() => {
     </div>
   </nav>
   <div class="h-fit w-full">
-    <div
-      ref="div_home"
-      id="home"
-      class="h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse"
-    >
-      <div class="flex items-end justify-center h-1/2 lg:h-full lg:w-[60%]">
+    <div ref="div_home" id="home" class="h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse">
+      <div class="flex items-end justify-center h-1/3 lg:h-full lg:w-[60%]">
         <div class="flex flex-col justify-end items-center h-full w-full">
-          <div class="block aspect-square lg:bg-[#FFEF63] p-[20%] lg:p-[30%] rounded-[25%]"></div>
-          <img class="block -mt-[50%] lg:-mt-[70%] h-[90%]" src="~/assets/img/profile.png" />
+          <div class="aspect-square lg:bg-[#FFEF63] p-[20%] lg:p-[30%] rounded-[25%]"></div>
+          <div class="aspect-square -mt-[50%] lg:-mt-[70%] h-[110%] lg:h-[90%]">
+            <img class="h-full w-full" src="~/assets/img/profile.png" />
+          </div>
         </div>
       </div>
-      <div class="flex justify-center font-semibold h-1/2 lg:h-full lg:w-[40%]">
+      <div class="flex justify-center font-semibold h-2/3 lg:h-full lg:w-[40%]">
         <div class="flex flex-col justify-center items-center text-center">
           <div class="flex items-center text-center mt-20">
-            <p class="text-2xl xl:text-6xl text-white">I'm</p>
-            <p class="text-4xl xl:text-8xl text-[#FFEF63] px-3 py-5">Jessada</p>
+            <p class="text-4xl xl:text-6xl text-white">I'm</p>
+            <p class="text-6xl xl:text-8xl text-[#FFEF63] px-3 py-5">Jessada</p>
           </div>
           <div class="flex items-center text-center bg-white rounded-full px-6 py-3">
             <p
@@ -134,6 +132,9 @@ const hash_inView = computed(() => {
                 <div
                   class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63]"
                 ></div>
+                <div
+                  class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63] animate-ping"
+                ></div>
                 <time class="mb-1 text-sm lg:text-base font-normal leading-none text-gray-500">{{
                   item.year
                 }}</time>
@@ -161,6 +162,9 @@ const hash_inView = computed(() => {
               <li v-for="item in info?.portfolio.project" class="mb-10 ml-4">
                 <div
                   class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63]"
+                ></div>
+                <div
+                  class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63] animate-ping"
                 ></div>
                 <time class="mb-1 text-sm lg:text-base font-normal leading-none text-gray-500">{{
                   item.year
