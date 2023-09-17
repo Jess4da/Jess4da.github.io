@@ -58,7 +58,7 @@
           "Created a stock management and sale statistic desktop application for the shop by using Vue.js as a front end and Flask as a back end and serve the application with pywebview (Rewrite from exist FoxPro program)",
           "Created a customer history collection desktop application for collecting customer buy history by using Vue.js as a frontend and Flask as a back end and serve the application with pywebview"
         ],
-        "stack": "Vue.js(TypeScript), Tailwindcss, Vueuse, Pinia, Flask, sqlalchemy, pdfkit, pydantic"
+        "stack": "Vue.js(TypeScript), Tailwindcss, Vueuse, Pinia, Flask, sqlalchemy, pdfkit, pydantic, pywebview"
       },
       {
         "year": "April 2021 - June 2021",
