@@ -88,7 +88,7 @@
         "title": "LINE Covid Case Daily Notify",
         "subtitle": "Free Time Project",
         "detail": [
-          "Created a LINE official account that notify daily covid case in thailand, requested data from department of disease control thailand, using LINE webhook, developed with Flask and deployed on heroku"
+          "Created a LINE official account that notify daily covid case in Thailand, requested data from department of disease control Thailand, using LINE webhook, developed with Flask and deployed on Heroku"
         ],
         "stack": "Flask, LineBotApi, Heroku"
       }
