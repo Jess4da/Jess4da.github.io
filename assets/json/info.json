@@ -92,6 +92,26 @@
         ],
         "stack": "Flask, LineBotApi, Heroku"
       }
+    ],
+    "education": [
+      {
+        "year": "2017-2021",
+        "title": "Naresuan University",
+        "subtitle": "Phitsanulok, Thailand",
+        "detail": [
+          "Bachelor of Computer Engineering",
+          "GPA: 3.36"
+        ]
+      },
+      {
+        "year": "2011-2017",
+        "title": "Watchara Wittaya School",
+        "subtitle": "Kamphaeng Phet, Thailand",
+        "detail": [
+          "High school (English program)",
+          "GPA: 3.43"
+        ]
+      }
     ]
   }
 }

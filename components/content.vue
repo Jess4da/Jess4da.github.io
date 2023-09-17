@@ -127,7 +127,7 @@ const hash_inView = computed(() => {
         <div class="flex flex-col w-[70%]">
           <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Experience</p>
           <div class="flex justify-center">
-            <ol class="relative border-l border-gray-700 xl:max-w-[60%]">
+            <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.experience" class="mb-10 ml-4">
                 <div
                   class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63]"
@@ -158,7 +158,7 @@ const hash_inView = computed(() => {
           <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
           <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Project</p>
           <div class="flex justify-center">
-            <ol class="relative border-l border-gray-700 xl:max-w-[60%]">
+            <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.project" class="mb-10 ml-4">
                 <div
                   class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63]"
@@ -183,6 +183,34 @@ const hash_inView = computed(() => {
                 <p class="text-sm lg:text-base font-light text-gray-300">
                   Tech stack: <a class="font-semibold">{{ item.stack }}</a>
                 </p>
+              </li>
+            </ol>
+          </div>
+          <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
+          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Education</p>
+          <div class="flex justify-center">
+            <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
+              <li v-for="item in info?.portfolio.education" class="mb-10 ml-4">
+                <div
+                  class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63]"
+                ></div>
+                <div
+                  class="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-none bg-[#FFEF63] animate-ping"
+                ></div>
+                <time class="mb-1 text-sm lg:text-base font-normal leading-none text-gray-500">{{
+                  item.year
+                }}</time>
+                <h3 class="text-2xl lg:text-4xl font-semibold text-white">
+                  {{ item.title }}
+                </h3>
+                <p class="text-base lg:text-lg font-normal text-gray-300">
+                  {{ item.subtitle }}
+                </p>
+                <ul class="ms-10 list-disc text-sm lg:text-base font-light text-gray-400">
+                  <li v-for="d in item.detail">
+                    {{ d }}
+                  </li>
+                </ul>
               </li>
             </ol>
           </div>
