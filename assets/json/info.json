@@ -62,7 +62,7 @@
           "Created a stock management and sale statistic desktop application for the shop by using Vue.js as a front end and Flask as a back end and serve the application with pywebview (Rewrite from exist FoxPro program)",
           "Created a customer history collection desktop application for collecting customer buy history by using Vue.js as a frontend and Flask as a back end and serve the application with pywebview"
         ],
-        "stack": "Vue.js(TypeScript), Tailwindcss, Vueuse, Pinia, Flask, sqlalchemy, pdfkit, pydantic, pywebview"
+        "stack": "Vue.js(TypeScript), TailwindCSS, VueUse, Pinia, Flask, SQLAlchemy, PDFKit, Pydantic, pywebview"
       },
       {
         "year": "April 2021 - June 2021",
@@ -73,7 +73,7 @@
           "Created Prometheus endpoint metrics for viewing the performance of requests and display in Grafana",
           "Made the Career-Admin page can get Medium article detail from pasted URL and show to Career Page"
         ],
-        "stack": "Django, Odoo, boto3, Beautiful-Soup, prometheus-client"
+        "stack": "Django, Odoo, Boto3, Beautiful-Soup, Prometheus-Client"
       }
     ],
     "project": [
