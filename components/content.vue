@@ -109,7 +109,6 @@ const hash_inView = computed(() => {
               v-for="item in info?.about.skills"
               class="block aspect-square bg-slate-500 xl:hover:bg-[#FFEF63] rounded-2xl xl:transition xl:hover:scale-110"
               data-aos="flip-down"
-              data-aos-anchor-placement="center-bottom"
             >
               <div class="p-9 lg:p-14 flex flex-col justify-center items-center h-full">
                 <img :src="item.img" />
@@ -133,7 +132,7 @@ const hash_inView = computed(() => {
           <div
             class="flex justify-center"
             data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-anchor-placement="top-center"
           >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.experience" class="mb-10 ml-4">
@@ -170,7 +169,7 @@ const hash_inView = computed(() => {
           <div
             class="flex justify-center"
             data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-anchor-placement="top-center"
           >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.project" class="mb-10 ml-4">
@@ -207,7 +206,7 @@ const hash_inView = computed(() => {
           <div
             class="flex justify-center"
             data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-anchor-placement="top-center"
           >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.education" class="mb-10 ml-4">
@@ -250,7 +249,7 @@ const hash_inView = computed(() => {
       <div
         class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5"
         data-aos="flip-right"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="bottom-bottom"
       >
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
