@@ -61,7 +61,7 @@ const hash_inView = computed(() => {
   </nav>
   <div class="h-fit w-full">
     <div ref="div_home" id="home" class="h-[100vh] w-full mb-1 flex max-lg:flex-col-reverse">
-      <div class="flex items-end justify-center h-1/3 lg:h-full lg:w-[60%]">
+      <div class="flex items-end justify-center h-1/3 lg:h-full lg:w-[60%]" data-aos="fade-right">
         <div class="flex flex-col justify-end items-center h-full w-full">
           <div class="aspect-square lg:bg-[#FFEF63] p-[20%] lg:p-[30%] rounded-[25%]"></div>
           <div class="aspect-square -mt-[50%] lg:-mt-[70%] h-[110%] lg:h-[90%]">
@@ -70,7 +70,7 @@ const hash_inView = computed(() => {
         </div>
       </div>
       <div class="flex justify-center font-semibold h-2/3 lg:h-full lg:w-[40%]">
-        <div class="flex flex-col justify-center items-center text-center">
+        <div class="flex flex-col justify-center items-center text-center" data-aos="fade-left">
           <div class="flex items-center text-center mt-20">
             <p class="text-4xl xl:text-6xl text-white">I'm</p>
             <p class="text-6xl xl:text-8xl text-[#FFEF63] px-3 py-5">Jessada</p>
@@ -91,7 +91,7 @@ const hash_inView = computed(() => {
       class="flex justify-center items-start min-h-[100vh] h-fit w-full my-1"
     >
       <div class="flex justify-center my-[15vh] lg:my-[5vh] xl:my-[10vh] w-full">
-        <div class="flex flex-col justify-center w-[70%]">
+        <div class="flex flex-col justify-center w-[70%]" data-aos="fade-up">
           <p class="text-white text-5xl lg:text-9xl mb-5 font-semibold">About</p>
           <div class="flex">
             <div class="bg-[#FFEF63] mt-5 rounded-full w-20 h-1 me-2"></div>
@@ -108,6 +108,8 @@ const hash_inView = computed(() => {
             <div
               v-for="item in info?.about.skills"
               class="block aspect-square bg-slate-500 xl:hover:bg-[#FFEF63] rounded-2xl xl:transition xl:hover:scale-110"
+              data-aos="flip-down"
+              data-aos-anchor-placement="center-bottom"
             >
               <div class="p-9 lg:p-14 flex flex-col justify-center items-center h-full">
                 <img :src="item.img" />
@@ -125,8 +127,14 @@ const hash_inView = computed(() => {
     >
       <div class="flex justify-center my-[15vh] lg:my-[5vh] xl:my-[10vh] w-full">
         <div class="flex flex-col w-[70%]">
-          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Experience</p>
-          <div class="flex justify-center">
+          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
+            Experience
+          </p>
+          <div
+            class="flex justify-center"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.experience" class="mb-10 ml-4">
                 <div
@@ -156,8 +164,14 @@ const hash_inView = computed(() => {
             </ol>
           </div>
           <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
-          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Project</p>
-          <div class="flex justify-center">
+          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
+            Project
+          </p>
+          <div
+            class="flex justify-center"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.project" class="mb-10 ml-4">
                 <div
@@ -187,8 +201,14 @@ const hash_inView = computed(() => {
             </ol>
           </div>
           <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
-          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold">Education</p>
-          <div class="flex justify-center">
+          <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
+            Education
+          </p>
+          <div
+            class="flex justify-center"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.education" class="mb-10 ml-4">
                 <div
@@ -224,10 +244,14 @@ const hash_inView = computed(() => {
     >
       <div class="flex justify-center items-center w-[80%] lg:w-[70%] mb-5">
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
-        <p class="text-white mx-5 text-4xl lg:text-6xl font-semibold">Contact</p>
+        <p class="text-white mx-5 text-4xl lg:text-6xl font-semibold" data-aos="fade-up">Contact</p>
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5"
+        data-aos="flip-right"
+        data-aos-anchor-placement="center-bottom"
+      >
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
           href="tel:+66839621222"
