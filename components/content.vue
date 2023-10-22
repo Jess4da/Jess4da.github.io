@@ -105,14 +105,17 @@ const hash_inView = computed(() => {
           <div
             class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 lg:gap-5 mt-5"
           >
-            <div
-              v-for="item in info?.about.skills"
-              class="block aspect-square bg-slate-500 xl:hover:bg-[#FFEF63] rounded-2xl xl:transition xl:hover:scale-110"
-              data-aos="flip-down"
-            >
-              <div class="p-9 lg:p-14 flex flex-col justify-center items-center h-full">
-                <img :src="item.img" />
-                <p class="text-white font-semibold text-md lg:text-2xl">{{ item.label }}</p>
+            <div v-for="item in info?.about.skills" data-aos="flip-down">
+              <div
+                class="block aspect-square bg-slate-500 xl:hover:bg-[#FFEF63] rounded-2xl xl:transition xl:hover:scale-110"
+              >
+                <div
+                  class="p-9 lg:p-14 flex flex-col justify-center items-center h-full text-white hover:text-slate-800"
+                >
+                  <img :src="item.img" />
+                  <p class="font-semibold text-md lg:text-2xl">{{ item.label }}</p>
+                  <p class="font-normal text-xs lg:text-base">Since {{ item.since }}</p>
+                </div>
               </div>
             </div>
           </div>
