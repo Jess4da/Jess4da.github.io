@@ -91,7 +91,7 @@ const hash_inView = computed(() => {
       class="flex justify-center items-start min-h-[100vh] h-fit w-full my-1"
     >
       <div class="flex justify-center my-[15vh] lg:my-[5vh] xl:my-[10vh] w-full">
-        <div class="flex flex-col justify-center w-[70%]" data-aos="fade-up">
+        <div class="flex flex-col justify-center w-[80%] lg:w-[70%]" data-aos="fade-up">
           <p class="text-white text-5xl lg:text-9xl mb-5 font-semibold">About</p>
           <div class="flex">
             <div class="bg-[#FFEF63] mt-5 rounded-full w-20 h-1 me-2"></div>
