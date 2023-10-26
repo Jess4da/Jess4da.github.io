@@ -10,7 +10,8 @@ AOS.init({
   <Content></Content>
 </template>
 <style>
-html {
-  @apply bg-gradient-to-br from-[#151E27] to-slate-800 scroll-smooth;
+html,
+body {
+  @apply bg-gradient-to-br from-[#151E27] to-slate-800 scroll-smooth bg-[#151E27];
 }
 </style>
