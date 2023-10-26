@@ -110,11 +110,11 @@ const hash_inView = computed(() => {
                 class="block aspect-square bg-slate-500 xl:hover:bg-[#FFEF63] rounded-2xl xl:transition xl:hover:scale-110"
               >
                 <div
-                  class="p-9 lg:p-14 flex flex-col justify-center items-center h-full text-white hover:text-slate-800"
+                  class="p-9 lg:p-14 flex flex-col justify-center items-center h-full text-white xl:hover:text-slate-800"
                 >
                   <img :src="item.img" />
                   <p class="font-semibold text-md lg:text-2xl">{{ item.label }}</p>
-                  <p class="font-normal text-xs lg:text-base">Since {{ item.since }}</p>
+                  <p class="font-normal text-[10px] lg:text-base">Since {{ item.since }}</p>
                 </div>
               </div>
             </div>
