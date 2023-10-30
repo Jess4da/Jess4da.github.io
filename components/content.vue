@@ -395,7 +395,7 @@ const hash_inView = computed(() => {
           <p class="ms-5 text-white font-semibold text-lg">linkedin.com/in/jessada-d</p>
         </a>
         <a
-          class="flex justify-self-center lg:col-span-2 w-1/2 items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
+          class="flex lg:justify-self-center lg:col-span-2 lg:w-1/2 items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
           href="https://github.com/Jess4da/Jess4da.github.io/releases/latest/download/Resume.pdf"
           target="_blank"
           ><svg
