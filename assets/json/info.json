@@ -74,7 +74,7 @@
           "Part of CodeClean team (Smart Laundromat), created a back end for the system",
           "Back end of HRM service for an e-commerce company"
         ],
-        "stack": "NodeJS(TypeScript), Golang, Express.js, Fastify, Prisma"
+        "stack": "NodeJS(TypeScript), Golang, Gin Gonic, Gorm, Express, Fastify, Prisma"
       },
       {
         "year": "January 2023 - June 2023",
