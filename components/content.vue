@@ -132,11 +132,7 @@ const hash_inView = computed(() => {
           <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
             Experience
           </p>
-          <div
-            class="flex justify-center"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-          >
+          <div class="flex justify-center" data-aos="fade-up">
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.experience" class="mb-10 ml-4">
                 <div
@@ -169,11 +165,7 @@ const hash_inView = computed(() => {
           <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
             Project
           </p>
-          <div
-            class="flex justify-center"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-          >
+          <div class="flex justify-center" data-aos="fade-up">
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.project" class="mb-10 ml-4">
                 <div
@@ -206,11 +198,7 @@ const hash_inView = computed(() => {
           <p class="text-white text-4xl lg:text-6xl mb-5 font-semibold" data-aos="fade-up">
             Education
           </p>
-          <div
-            class="flex justify-center"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
-          >
+          <div class="flex justify-center" data-aos="fade-up">
             <ol class="relative border-l border-gray-700 w-full xl:max-w-[60%]">
               <li v-for="item in info?.portfolio.education" class="mb-10 ml-4">
                 <div
@@ -249,11 +237,7 @@ const hash_inView = computed(() => {
         <p class="text-white mx-5 text-4xl lg:text-6xl font-semibold" data-aos="fade-up">Contact</p>
         <div class="w-[80%] lg:w-[50%] self-center h-1 rounded-full bg-[#FFEF63] my-10"></div>
       </div>
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5"
-        data-aos="flip-right"
-        data-aos-anchor-placement="bottom-bottom"
-      >
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5" data-aos="flip-right">
         <a
           class="flex items-center justify-start bg-slate-500 px-10 py-5 rounded-2xl xl:transition xl:hover:scale-110"
           href="tel:+66839621222"
