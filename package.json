@@ -1,27 +1,36 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.3"
-  },
-  "dependencies": {
-    "@types/aos": "^3.0.5",
-    "@vueuse/core": "^10.4.1",
-    "@vueuse/nuxt": "^10.4.1",
-    "aos": "^2.3.4",
-    "autoprefixer": "^10.4.15",
-    "boxicons": "^2.1.4",
-    "gh-pages": "^6.0.0",
-    "postcss": "^8.4.29",
-    "tailwindcss": "^3.3.3"
-  }
+	"name": "jess4da.github.io",
+	"version": "0.0.1",
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^4.0.0",
+		"@sveltejs/kit": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
+		"@tailwindcss/vite": "^4.3.0",
+		"gh-pages": "^6.3.0",
+		"prettier": "^3.8.3",
+		"prettier-plugin-svelte": "^4.1.0",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"svelte": "^5.57.1",
+		"svelte-check": "^4.6.0",
+		"tailwindcss": "^4.3.0",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.0"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check .",
+		"format": "prettier --write .",
+		"deploy": "gh-pages -d build -t"
+	},
+	"type": "module"
 }
